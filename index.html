@@ -1,0 +1,57 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Happy Teddy Day, Sumayya!</title>
+      <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background: #ffdde1;
+          color: #444;
+          text-align: center;
+          padding: 30px;
+        }
+        h1 {
+          color: #ff6f61;
+          font-size: 3rem;
+        }
+        .button {
+          background-color: #ff6f61;
+          border: none;
+          padding: 10px 20px;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          margin: 10px;
+        }
+        .button:hover {
+          background-color: #ff3d54;
+        }
+        #password-section {
+          margin-top: 50px;
+        }
+      </style>
+      <script>
+        function checkPassword() {
+          var password = document.getElementById("password").value;
+          if (password === "TAKEMEOUTPLEASE") {
+            window.location.href = "about.html";
+          } else {
+            alert("Wrong password, try again!");
+          }
+        }
+      </script>
+    </head>
+    <body>
+      <h1>Happy Teddy Day, Sumayya!</h1>
+      <div id="password-section">
+        <p>Enter the password to unlock your surprise:</p>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button class="button" onclick="checkPassword()">Unlock</button>
+      </div>
+    </body>
+    </html>
+    
